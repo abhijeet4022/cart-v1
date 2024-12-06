@@ -1,7 +1,7 @@
 component: cart
 appPort: 8080
 service_type: ClusterIP
-PARAMETERS: "catalogue.dev.MONGO_URL,MONGO_URL catalogue.dev.DOCUMENTDB,DOCUMENTDB"
+PARAMETERS: "cart.dev.CATALOGUE_POD,CATALOGUE_HOST cart.dev.REDIS_HOST,REDIS_HOST cart.dev.CATALOGUE_PORT,CATALOGUE_PORT"
 env: dev
 schema:
   enabled: false
